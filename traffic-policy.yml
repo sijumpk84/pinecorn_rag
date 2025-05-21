@@ -1,0 +1,8 @@
+on_http_request:
+  - actions:
+      - type: basic-auth
+        config:
+          realm: testing-realm
+          credentials:
+            - admin:password
+          enforce: true
