@@ -50,14 +50,34 @@ pip install -r requirements.txt
 
 ## 🚀 Running the App Locally
 
-Start the FastAPI development server:
+Before starting the FastAPI development server, you must initialize the Pinecone index and populate it with your content.
+### 1. Create the Pinecone Index
+
+Run the setup script to create the Pinecone index (if it doesn't already exist):
 
 ```bash
-fastapi dev main.py
+python src/pinecone_index_setup.py
+```
+
+### 2. Add Content to the Index
+
+After creating the index, populate it with data from your markdown file:
+
+```bash
+python src/pinecone_index_builder.py
+```
+
+### 3. Start the FastAPI Server
+
+Now launch the development server:
+
+```bash
+fastapi dev src/main.py
 ```
 
 The app will be accessible at:
-http://127.0.0.1:8000/
+👉 http://127.0.0.1:8000/
+
 
 ## 🌐 Exposing the App with Ngrok
 
