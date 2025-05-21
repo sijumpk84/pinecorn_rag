@@ -9,7 +9,7 @@ from langchain_text_splitters import MarkdownHeaderTextSplitter
 load_dotenv()
 
 # Read the markdown file into a variable
-with open('../assets/content.md', 'r', encoding='utf-8') as file:
+with open('assets/content.md', 'r', encoding='utf-8') as file:
     markdown_document = file.read()
 
 # Define headers to split on (e.g., level 2 headers)

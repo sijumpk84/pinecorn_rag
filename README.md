@@ -17,8 +17,8 @@ A simple Retrieval-Augmented Generation (RAG) chatbot using FastAPI, OpenAI, and
 ### 1. Clone the Repository
 
 ```bash
-git clone https://your-repo-url.git
-cd your-repo-directory
+git clone git@github.com:sijumpk84/pinecorn_rag.git
+cd pinecorn_rag
 ```
 
 
